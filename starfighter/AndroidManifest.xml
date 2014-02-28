@@ -29,6 +29,7 @@
             android:screenOrientation="portrait" >
         </activity>
         <service android:name="com.proandroidgames.SFMusic"></service>
+        <activity android:name="com.proandroidgames.SFGame" android:screenOrientation="portrait"></activity>
     </application>
 
 </manifest>
