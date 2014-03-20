@@ -1,0 +1,7 @@
+package com.proandroidgames;
+
+import android.opengl.GLSurfaceView.Renderer;
+
+public class SFGameRenderer implements Renderer{
+	
+}

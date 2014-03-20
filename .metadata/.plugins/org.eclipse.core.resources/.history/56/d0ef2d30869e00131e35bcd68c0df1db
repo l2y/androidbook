@@ -1,0 +1,22 @@
+package com.starfighter;
+
+import android.os.Bundle;
+import android.os.Handler;
+import android.app.Activity;
+import android.view.Menu;
+
+public class StarfighterActivity extends Activity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.splashscreen);
+        new Handler().postDelayed(new Thread() {
+        	@Override
+        	public void run(){
+        		
+        	}
+        });
+    }
+    
+}

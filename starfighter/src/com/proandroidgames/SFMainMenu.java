@@ -3,6 +3,7 @@ package com.proandroidgames;
 import com.starfighter.R;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -13,6 +14,15 @@ public class SFMainMenu extends Activity{
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main);
+		SFEngine.context = getApplication();
+		
+		SFEngine.musicThread = new Thread(){
+			public void run(){
+				Intent bgmusic = new Intent(getApplicationContext(), SFMusic.class);
+				startService(bgmusic);
+			}
+		};
+		SFEngine.musicThread.start();
 		
 		final SFEngine engine = new SFEngine();
 		
@@ -28,7 +38,8 @@ public class SFMainMenu extends Activity{
 		start.setOnClickListener(new OnClickListener(){
 			@Override
 			public void onClick(View v) {
-				//Start Game
+				Intent game = new Intent(getApplicationContext(),SFGame.class);
+				SFMainMenu.this.startActivity(game);
 			}
 		});
 		
