@@ -1,0 +1,22 @@
+package com.proandroidgames;
+
+public class SFEnemy {
+	public float posY = 0f;
+	public float posX = 0f;
+	public float posT = 0f;
+	public float incrementXToTarget = 0f; 
+	
+	public int attackDirection = 0;
+	public boolean isDestroyed = false;
+	public int enemyType = 0;
+	
+	public boolean isLockedOn = false;
+	float lockOnPosX = 0f;
+	public float lockOnPosY = 0f;
+	
+	public SFEnemy(int type, int direction) {
+		enemyType = type;
+		attackDirection = direction;
+		posY = (randomPos.nextFloat() * 4) + 4;
+	}
+}

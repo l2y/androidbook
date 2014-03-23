@@ -1,0 +1,16 @@
+package com.proandroidgames;
+
+import javax.microedition.khronos.opengles.GL10;
+
+import android.content.Context;
+
+public class SFTextures {
+	private int[] textures = new int[1];
+	gl.glGenTextures(1,textures,0);
+	
+	public SFTextures(GL10 gl){
+		
+	}
+	
+	public int[] loadTexture(GL10 gl,int texture, Context context, int textureNumber)
+}

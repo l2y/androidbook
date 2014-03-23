@@ -1,0 +1,6 @@
+public class SFEnemy {
+	public float posY = 0f;
+	public float posX = 0f;
+	public float posT = 0f;
+	public float incrementXToTarget = 0f; 
+}
