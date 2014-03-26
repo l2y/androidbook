@@ -1,4 +1,3 @@
 INDEX VERSION 1.126+/Users/l2y/practicalandroidgamedev/.metadata/.plugins/org.eclipse.jdt.core
-3407580286.index
 2858607097.index
 195421654.index

@@ -207,7 +207,7 @@ public class SFGameRenderer implements Renderer {
 			gl.glMatrixMode(GL10.GL_TEXTURE);
 			gl.glLoadIdentity();
 			gl.glTranslatef(0.0f, 0.0f, 0.0f);
-			player1.draw(gl,spriteSheets);
+			player1.draw(gl);
 			gl.glPopMatrix();
 			gl.glLoadIdentity();
 
