@@ -1,0 +1,17 @@
+package com.proandroidgames;
+
+public class SFWeapon {
+	public float posY = 0f;
+	public float posX = 0f;
+	public boolean shotFired = false;
+
+	private float vertices[] = { 0.0f, 0.0f, 0.0f, 1.0f, 0.0f, 0.0f, 1.0f,
+			1.0f, 0.0f, 0.0f, 1.0f, 0.0f, };
+
+	private float texture[] = { 0.0f, 0.0f, 0.25f, 0.0f, 0.25f, 0.25f, 0.0f,
+			0.25f, };
+
+	private byte indices[] = { 0, 1, 2, 0, 2, 3, };
+	
+	
+}

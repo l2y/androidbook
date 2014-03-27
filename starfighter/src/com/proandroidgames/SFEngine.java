@@ -52,6 +52,12 @@ public class SFEngine {
 	public static final int PLAYER_FRAMES_BETWEEN_ANI = 9;
 	public static final float PLAYER_BANK_SPEED = .1f;
 	public static float playerBankPosX = 1.75f;
+	public static final int PLAYER_SHIELDS = 5;
+	public static final int SCOUT_SHIELDS = 3;
+	public static final int INTERCEPTORS_SHEILDS = 1;
+	public static final int WARSHIP_SHIELDS = 5;
+	public static final float PLAYER_BULLET_SPEED = .125f;
+	public static final int WEAPONS_SHEET = R.drawable.destruction;
 	
 	public boolean onExit(View v) {
 		try{
